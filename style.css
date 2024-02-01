@@ -1,0 +1,68 @@
+body {
+    background: orchid;
+}
+
+h1 {
+    text-transform: capitalize;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*
+specificity{
+  PROPERTY: VALUE;
+  PROPERTY: VALUE;
+  PROPERTY: VALUE;
+}
+*/
+/*Variables  */
+:root{
+  --color1 : 614C51;
+  --color2 : 67E706D;
+  --font1 : "roboto", sans-serif;
+}
+
+
+body {
+  font-family: var(--font1)
+}
+
+
+
+/*Score:0,0,0,1*/
+h1{
+  color: var( --color1);
+}
+
+p{
+  color: blue;
+}
+
+/*score: 0,0,1,0  */
+.indent{
+  text-indent: 32px;
+}
+
+/* ,score: 0,0,1,0 */
+.first:first-letter{
+  font-size: 2em
+}
+
+/*score: 0,1,0,0  */
+#cta {
+  color: red;
+  background: blue;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+}
+#cta:link: {
+  color: white;
+  background: blue;
+  text-decoration: none;
+}
+
+#cta:hover {
+  background: red;
+  color: blue;
+  padding: 1em;
+  transition: all 1s;
+}
